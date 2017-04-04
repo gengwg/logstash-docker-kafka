@@ -6,7 +6,7 @@ $ docker run -u 0 -it  logstash /bin/bash
 root@4fad465cd089:/# logstash -f /usr/share/logstash/pipeline/
 
 # on kafka host
-$ kafka-console-producer --broker-list localhost:9092 --topic oneopspublisher
+$ kafka-console-producer --broker-list localhost:9092 --topic mytopic
 Hello World! <Enter>
 
 # on docker side, one will see
