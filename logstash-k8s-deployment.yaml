@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: logstash-kafka-test
+spec:
+  replicas: 3
+  revisionHistoryLimit: 1
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: logstash-kafka-test
+    spec:
+      hostNetwork: true
+      containers:
+        - name: logstash-kafka-test
+          image: docker.prod.example.com/presidio/logstash-kafka-test
+          imagePullPolicy: Always
