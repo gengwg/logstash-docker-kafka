@@ -15,5 +15,5 @@ spec:
       hostNetwork: true
       containers:
         - name: logstash-kafka-test
-          image: docker.prod.example.com/presidio/logstash-kafka-test
+          image: docker.prod.example.com/org/logstash-kafka-test
           imagePullPolicy: Always
