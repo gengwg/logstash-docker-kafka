@@ -2,7 +2,8 @@
 
 ```bash
 # on docker side
-$ docker run -u 0 -it  logstash /bin/bash
+$ docker build -t logstash-kafka-test .
+$ docker run -u 0 -it  logstash-kafka-test /bin/bash
 root@4fad465cd089:/# logstash -f /usr/share/logstash/pipeline/
 
 # on kafka host
