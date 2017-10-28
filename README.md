@@ -21,3 +21,18 @@ Hello World! <Enter>
     ]
 }
 ```
+
+## Deploy to Kubernetes
+
+After tested, deploy to k8s.
+
+```
+# build the image
+docker build -t docker.example.com/organization/logstash-kafka-test .
+# push to registry
+docker push docker.example.com/organization/logstash-kafka-test
+# deploy to k8s
+kubectl -s http://kubernetes.organization.example.com:8080 apply -f logstash-k8s-deployment.yaml
+```
+
+
