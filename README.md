@@ -9,7 +9,7 @@ root@4fad465cd089:/# logstash -f /usr/share/logstash/pipeline/
 [2017-10-28T00:34:09,157][INFO ][org.apache.kafka.common.utils.AppInfoParser] Kafka version : 0.10.0.1
 [2017-10-28T00:34:09,157][INFO ][org.apache.kafka.common.utils.AppInfoParser] Kafka commitId : a7a17cdec9eaa6c5
 [2017-10-28T00:34:09,445][WARN ][org.apache.kafka.clients.NetworkClient] Error while fetching metadata with correlation id 1 : {mytopic2=LEADER_NOT_AVAILABLE}
-[2017-10-28T00:34:09,447][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Discovered coordinator kafka-158856208-1-171923103.crm-comms-prod.Kafka.organization.dal4.prod.company.com:9092 (id: 2147483546 rack: null) for group mygroup2.
+[2017-10-28T00:34:09,447][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Discovered coordinator kafka-158856208-1-171923103.stg.Kafka.organization.dal4.prod.company.com:9092 (id: 2147483546 rack: null) for group mygroup2.
 [2017-10-28T00:34:09,452][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] Revoking previously assigned partitions [] for group mygroup2
 [2017-10-28T00:34:09,453][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] (Re-)joining group mygroup2
 [2017-10-28T00:34:09,767][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Successfully joined group mygroup2 with generation 1
@@ -20,7 +20,7 @@ root@4fad465cd089:/# logstash -f /usr/share/logstash/pipeline/
 ...
 [2017-10-28T00:35:24,696][INFO ][org.apache.kafka.common.utils.AppInfoParser] Kafka version : 0.10.0.1
 [2017-10-28T00:35:24,696][INFO ][org.apache.kafka.common.utils.AppInfoParser] Kafka commitId : a7a17cdec9eaa6c5
-[2017-10-28T00:35:24,910][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Discovered coordinator kafka-158856208-1-171923103.crm-comms-prod.Kafka.organization.dal4.prod.company.com:9092 (id: 2147483546 rack: null) for group mygroup2.
+[2017-10-28T00:35:24,910][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Discovered coordinator kafka-158856208-1-171923103.stg.Kafka.organization.dal4.prod.company.com:9092 (id: 2147483546 rack: null) for group mygroup2.
 [2017-10-28T00:35:24,915][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] Revoking previously assigned partitions [] for group mygroup2
 [2017-10-28T00:35:24,915][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] (Re-)joining group mygroup2
 [2017-10-28T00:35:25,089][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Successfully joined group mygroup2 with generation 3
@@ -30,7 +30,7 @@ root@4fad465cd089:/# logstash -f /usr/share/logstash/pipeline/
 $ docker run -it  logstash-kafka-test
 [2017-10-28T00:39:22,032][INFO ][org.apache.kafka.common.utils.AppInfoParser] Kafka version : 0.10.0.1
 [2017-10-28T00:39:22,033][INFO ][org.apache.kafka.common.utils.AppInfoParser] Kafka commitId : a7a17cdec9eaa6c5
-[2017-10-28T00:39:22,242][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Discovered coordinator kafka-158856208-1-171923103.crm-comms-prod.Kafka.organization.dal4.prod.company.com:9092 (id: 2147483546 rack: null) for group mygroup2.
+[2017-10-28T00:39:22,242][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Discovered coordinator kafka-158856208-1-171923103.stg.Kafka.organization.dal4.prod.company.com:9092 (id: 2147483546 rack: null) for group mygroup2.
 [2017-10-28T00:39:22,247][INFO ][org.apache.kafka.clients.consumer.internals.ConsumerCoordinator] Revoking previously assigned partitions [] for group mygroup2
 [2017-10-28T00:39:22,248][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] (Re-)joining group mygroup2
 [2017-10-28T00:39:22,424][INFO ][org.apache.kafka.clients.consumer.internals.AbstractCoordinator] Successfully joined group mygroup2 with generation 7
